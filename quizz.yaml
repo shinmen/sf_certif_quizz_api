@@ -1,0 +1,21 @@
+quizz:
+    -
+        type: "radio"
+        subject: "PHP et Sécurité Web"
+        question: "Quelle est l’extension conseillée sur PHP pour se connecter à une bdd?"
+        choice: ["mysql", "mysqli", "pdo"]
+        answer: ["pdo"]
+        more: []
+                    
+    -
+        type: "radio"
+        subject: "PHP et Sécurité Web"
+        question: "A quoi sert la fonction spl_autoload_register de la bibliothèque SPL?"
+        choice: ["Enregistrer une fonction permettant l’implémentation de __autoload()", "Créer l’implémentation par défaut de __autoload()", "Essayer toutes les fonctions __autoload() enregistrées pour charger la classe demandée"]
+        answer: ["Enregistrer une fonction permettant l’implémentation de __autoload()"]
+        more: []
+            
+        
+                
+
+
