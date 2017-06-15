@@ -1,19 +1,144 @@
 quizz:
     -
-        type: "radio"
-        subject: "PHP et Sécurité Web"
-        question: "Quelle est l’extension conseillée sur PHP pour se connecter à une bdd?"
-        choice: ["mysql", "mysqli", "pdo"]
-        answer: ["pdo"]
-        more: []
+         type: "radio"
+         subject: "PHP et Sécurité Web"
+         question: "Quelle est l’extension conseillée sur PHP pour se connecter à une bdd?"
+         choice: ["mysql", "mysqli", "pdo"]
+         answer: ["pdo"]
+         more: []
                     
+    -     
+         type: "radio"
+         subject: "PHP et Sécurité Web"
+         question: "A quoi sert la fonction spl_autoload_register de la bibliothèque SPL?"
+         choice: ["Enregistrer une fonction permettant l’implémentation de __autoload()", "Créer l’implémentation par défaut de __autoload()", "Essayer toutes les fonctions __autoload() enregistrées pour charger la classe demandée"]
+         answer: ["Enregistrer une fonction permettant l’implémentation de __autoload()"]
+         more: []
+        
     -
-        type: "radio"
-        subject: "PHP et Sécurité Web"
-        question: "A quoi sert la fonction spl_autoload_register de la bibliothèque SPL?"
-        choice: ["Enregistrer une fonction permettant l’implémentation de __autoload()", "Créer l’implémentation par défaut de __autoload()", "Essayer toutes les fonctions __autoload() enregistrées pour charger la classe demandée"]
-        answer: ["Enregistrer une fonction permettant l’implémentation de __autoload()"]
-        more: []
+         type: "radio"
+         subject: "PHP et Sécurité Web"
+         question: "Quelle version de PHP a introduit les générateurs?"
+         choice: [5.4, 5.5, 5.6]
+         answer: [5.5]
+         more: ["<a href='https://blog.pascal-martin.fr/public/slides-phptour-2014-migration-version-php'>APi 5.3 à 5.6</a>"]
+    
+    -
+         type: "simple"
+         subject: "HTTP"
+         question: "Dans quelle propriété de quel objet symfony sont stockés les infos supplémentaires de contexte de la requête, telle que le nom de la route (_route) ou le format de sortie (_format) ?"
+         answer: ["$request->attributes"]
+         more: []
+        
+    -
+         type: "radio"
+         subject: "HTTP"
+         question: "la méthode http PUT peut créer une nouvelle ressource ?"
+         choice: ["vrai", "faux"]
+         answer: ["vrai"]
+         more: ["<a href='http://51elliot.blogspot.fr/2014/03/rest-api-best-practices-rest-cheat-sheet.html'>http://51elliot.blogspot.fr/2014/03/rest-api-best-practices-rest-cheat-sheet.html</a>"]
+        
+    -
+         type: "simple"
+         subject: "HTTP"
+         question: "Quel statut HTTP indique que la requête est acceptée, mais sera traitée de manière asynchrone?"
+         answer: [202]
+         more: ["<a href='http://51elliot.blogspot.fr/2014/03/rest-api-best-practices-rest-cheat-sheet.html'>http://51elliot.blogspot.fr/2014/03/rest-api-best-practices-rest-cheat-sheet.html</a>"]
+        
+    -
+         type: "simple"
+         subject: "HTTP"
+         question: "Quel statut HTTP indique qu’une ressource a été créée ?"
+         answer: [201]
+         more: ["<a href='http://51elliot.blogspot.fr/2014/03/rest-api-best-practices-rest-cheat-sheet.html'>http://51elliot.blogspot.fr/2014/03/rest-api-best-practices-rest-cheat-sheet.html</a>"]
+        
+    -
+         type: "radio"
+         subject: "HTTP"
+         question: "la première ligne d’un message HTTP de requête contient entre autre la version du scheme HTTP?"
+         choice: ["vrai", "faux"]
+         answer: ["vrai"]
+         more: ["POST /product HTTPS/1.1"]
+        
+    -
+         type: "radio"
+         subject: "HTTP"
+         question: "le header user-agent est obligatoire dans le protocole HTTP en version 1.1 ?"
+         choice: ["vrai", "faux"]
+         answer: ["faux"]
+         more: ["Seulement le host"]
+        
+    -
+         type: "radio"
+         subject: "HTTP"
+         question: "Laquelle de ces méthodes HTTP n’existe pas ?"
+         choice: ["TRACE", "HEAD", "UPDATE", "OPTIONS", "CONNECT"]
+         answer: ["UPDATE"]
+         more: ["PUT ou PATCH pour la mise à jour"]
+        
+    -
+         type: "checkbox"
+         subject: "HTTP"
+         question: "Lesquelles de ces méthodes sont idempotent ?"
+         choice: ["OPTIONS", "GET", "HEAD", "PUT", "POST", "DELETE", "PATCH"]
+         answer: ["OPTIONS", "GET", "HEAD", "PUT", "DELETE"]
+         more: ["<a href='http://jsonpatch.com/'>comment faire du PATCH</a>", "<a href='http://www.eq8.eu/blogs/37-post-create-and-put-update'>méthodes idempotent</a>"]
+        
+    -
+         type: "checkbox"
+         subject: "HTTP"
+         question: "Lesquelles de ces méthodes sont safe ?"
+         choice: ["OPTIONS", "GET", "HEAD", "PUT", "POST", "DELETE", "PATCH"]
+         answer: ["OPTIONS", "GET", "HEAD"]
+         more: ["<a href='http://www.eq8.eu/blogs/37-post-create-and-put-update'>méthodes safe</a>"]
+        
+    -
+         type: "radio"
+         subject: "HTTP"
+         question: "les réponses HTTP suite à l’envoi successifs de 2 requetes “idempotent” retourneront le même statut HTTP ?"
+         choice: ["vrai", "faux"]
+         answer: ["faux"]
+         more: ["exemple PUT: 201 puis 204"]
+        
+    -
+         type: "checkbox"
+         subject: "HTTP"
+         question: "Lesquels de ces attributs de l’objet Request n’existe pas ?"
+         choice: ["$request->headers", "$request->get", "$request->post", "$request->cookies", "$request->attributes", "$request->files", "$request->server"]
+         answer: ["$request->get", "$request->post"]
+         more: ["$request->get devrait être $request->query et $request->post devrait être $request->request"]
+        
+    -
+         type: "checkbox"
+         subject: "HTTP"
+         question: "Lequels de ces headers HTTP sont valides ?"
+         choice: ["Accept-Language: fr;q=1.0, en-us;q=0.7, en;q=0.5", "Accept-Language: fr-fr;q=1.0, en-us;q=0.7", "Accept-Language: fr;q=1.0, en;q=0.5"]
+         answer: ["Accept-Language: fr;q=1.0, en-us;q=0.7, en;q=0.5", "Accept-Language: fr-fr;q=1.0, en-us;q=0.7", "Accept-Language: fr;q=1.0, en;q=0.5"]
+         more: []
+        
+    -
+         type: "radio"
+         subject: "HTTP"
+         question: "Symfony inclut un composant Negotiation pour traiter les headers HTTP de négotiation ?"
+         choice: ["vrai", "faux"]
+         answer: ["faux"]
+         more: ["<a href='https://github.com/willdurand/Negotiation'>composant Negotiation</a>"]
+        
+    -
+         type: "simple"
+         subject: "HTTP"
+         question: "vous entrez l'url http://localhost/web/index.php, une Request est créée, comment récupérer 'web' ?"
+         answer: ["$request->getBasePath()"]
+         more: []
+        
+    -
+         type: "radio"
+         subject: "HTTP"
+         question: "si Cookie lifetime = 0, quand le cookie expire t'il ?"
+         choice: ["Quand on ferme le browser", "Après la requête", "Jamais"]
+         answer: ["Quand on ferme le browser"]
+         more: ["<a href='http://php.net/manual/fr/session.configuration.php#ini.session.cookie-lifetime'>durée de vie des cookies</a>"]
+        
             
         
                 
