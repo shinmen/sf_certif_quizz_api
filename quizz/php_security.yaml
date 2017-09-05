@@ -1,0 +1,24 @@
+quizz:
+    -
+         type: "radio"
+         subject: "PHP et Sécurité Web"
+         question: "Quelle est l’extension conseillée sur PHP pour se connecter à une bdd?"
+         choice: ["mysql", "mysqli", "pdo"]
+         answer: ["pdo"]
+         more: []
+                    
+    -     
+         type: "radio"
+         subject: "PHP et Sécurité Web"
+         question: "A quoi sert la fonction spl_autoload_register de la bibliothèque SPL?"
+         choice: ["Enregistrer une fonction permettant l’implémentation de __autoload()", "Créer l’implémentation par défaut de __autoload()", "Essayer toutes les fonctions __autoload() enregistrées pour charger la classe demandée"]
+         answer: ["Enregistrer une fonction permettant l’implémentation de __autoload()"]
+         more: []
+        
+    -
+         type: "radio"
+         subject: "PHP et Sécurité Web"
+         question: "Quelle version de PHP a introduit les générateurs?"
+         choice: [5.4, 5.5, 5.6]
+         answer: [5.5]
+         more: ["<a href='https://blog.pascal-martin.fr/public/slides-phptour-2014-migration-version-php'>APi 5.3 à 5.6</a>"]
