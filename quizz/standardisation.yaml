@@ -1,0 +1,50 @@
+quizz:
+    - 
+        type: "radio"
+        subject: "Standardisation"
+        question: "Dans quel namespace devrait-on placer ses classes de formulaires?"
+        choice: ["Toujours dans bundle/form", "Dans bundle/form à moins d'avoir d'autres classes liées aux formulaires (data transformer)", "Dans bundle/formType"]
+        answer: ["Dans bundle/form à moins d'avoir d'autres classes liées aux formulaires (data transformer)"]
+        more: []
+
+    - 
+        type: "radio"
+        subject: "Standardisation"
+        question: "Comment doit-on générer les urls dans les tests fonctionnels?"
+        choice: ["en dur", "via l'url generator", "peu importe"]
+        answer: ["en dur"]
+        more: []
+
+    -
+        type: "checkbox"
+        subject: "Standardisation"
+        question: "Comment surcharger un service d'un bundle tiers?"
+        choice: ["surcharge le paramètre de la classe de service lorsque la classe est définie en paramètre dans le bundle tier", "récupère la définition de service dans une passe de compilation et surcharger la classe du service", "Créer son service qui hérite de la classe de service tiers", "on ne peut pas"]
+        answer: ["surcharge le paramètre de la classe de service lorsque la classe est définie en paramètre dans le bundle tier", "récupère la définition de service dans une passe de compilation et surcharger la classe du service"]
+        more: []
+
+    -
+        type: "checkbox"
+        subject: "Standardisation"
+        question: "Comment surcharger des traductions de bundle tiers?"
+        choice: ["On ne peut pas", "En les mettant dans le dossier app/Resources/translations", "En faisant en sorte que le bundle contenant les traductions tierces soit loadé avant son propre bundle dans AppKernel"]
+        answer: ["En les mettant dans le dossier app/Resources/translations", "En faisant en sorte que le bundle contenant les traductions tierces soit loadé avant son propre bundle dans AppKernel"]
+        more: []
+
+    - 
+        type: "radio"
+        subject: "Standardisation"
+        question: "Symfony 3.0 suit quels standards psr?"
+        choice: ["psr 0, 1, 2, 3, 4", "psr 0, 1, 2, 4", "psr 0, 1, 2, 3, 4, 5, 6"]
+        answer: ["psr 0, 1, 2, 4"]
+        more: []
+
+    -
+        type: "radio"
+        subject: "Standardisation"
+        question: "Est-ce que la version symfony 3.0 est une version lts?"
+        choice: ["Oui", "Non"]
+        answer: ["Non"]
+        more: []
+
+
