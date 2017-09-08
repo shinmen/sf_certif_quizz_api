@@ -1,0 +1,22 @@
+quizz:
+    -
+        type: "checkbox"
+        subject: "Bundles"
+        question: "Lequels de ces dossiers sont obligatoires pour que les classes et fichiers inclus soient reconnus par le framework?"
+        choice: ["Command/ pour les commandes", "Controller/ pour les controllers", "Resources/config/", "DependencyInjection/ pour les extensions de conteneur de service"]
+        answer: ["Command/ pour les commandes", "DependencyInjection/ pour les extensions de conteneur de service"]
+        more: []
+    -
+        type: "radio"
+        subject: "Bundles"
+        question: "Dans quel dossier se trouve le fichier de point d'entrée de la documentation d'un bundle?"
+        choice: ["Resources/doc/index.rst", "Resources/index.rst", "index.rst", "Doc/index.rst"]
+        answer: ["Resources/doc/index.rst"]
+        more: []
+    -
+        type: "radio"
+        subject: "Bundles"
+        question: "Comment activer l'héritage de bundle?"
+        choice: ["En ajoutant dans son bundle la config "extends"", "En déclarant la méthode getParent() qui retourne le nom du bundle à étendre"]
+        answer: ["En déclarant la méthode getParent() qui retourne le nom du bundle à étendre"]
+        more: []
