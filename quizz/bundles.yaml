@@ -17,6 +17,6 @@ quizz:
         type: "radio"
         subject: "Bundles"
         question: "Comment activer l'héritage de bundle?"
-        choice: ["En ajoutant dans son bundle la config "extends"", "En déclarant la méthode getParent() qui retourne le nom du bundle à étendre"]
+        choice: ["En ajoutant dans son bundle la config extends", "En déclarant la méthode getParent() qui retourne le nom du bundle à étendre"]
         answer: ["En déclarant la méthode getParent() qui retourne le nom du bundle à étendre"]
         more: []
